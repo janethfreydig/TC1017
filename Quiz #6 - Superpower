@@ -1,0 +1,22 @@
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+long superpower(long a, long b)
+ {
+ return pow(a,b);
+ }
+int main()
+{
+
+long a;
+long b;
+
+    cout << "Enter base number:  "<< endl;
+    cin >> a;
+    cout << "Enter exponent: " << endl;
+    cin>> b;
+
+    cout << "Result:  " << superpower(a, b)<< endl;
+    return 0;
+}
