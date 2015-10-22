@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+#include <math.h>
+
+using namespace std;
+
+int sumsquares(vector<int>a)
+{
+  int x, y = 0;
+  for(int i=0; i<a.size(); i++)
+  {
+     x = pow(a[i],2);
+     y = x + y;
+  }
+  return y;
+}
+int main()
+{
+  vector<int>jany(5);
+  jany[0] = 1;
+  jany[1] = 2;
+  jany[2] = 3;
+  jany[3] = 4;
+  jany[4] = 5;
+  int result = sumsquares(jany);
+
+  cout << result << endl;
+
+  return 0;
+}
