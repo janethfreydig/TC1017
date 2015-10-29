@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+long factorial(long a)
+{
+  if (a<0)
+  {
+    return -1;
+  }
+  if (a==0)
+  {
+    return 1;
+  }
+  else
+  {
+    return a * factorial(a-1);
+  }
+}
+
+int main()
+{
+string b = "yes";
+long long a;
+
+while(b=="yes")
+{
+  cout<<"Input a non-negative integer number: "<< endl;
+  cin>> a;
+  if(a>=0)
+  {
+    cout<<"Factorial is: "<< factorial (a) << endl;
+  }
+  else
+  {
+    cout<<"You NEED a non-negative integer number. Input a number again:"<< endl;
+  }
+  cout<<"Do you want to try it again? Yes or no?"<< endl;
+  cin>>b;
+}
+  cout<<"Thank you, have a nice day!"<< endl;
+  return 0;
+}
