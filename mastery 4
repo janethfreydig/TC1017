@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+int a;
+int b;
+int sum;
+
+cout<<"Input the first number: "<< endl;
+cin>> a;
+cout<<"Input the second number: "<< endl;
+cin>> b;
+
+sum= a+b;
+
+cout<<"La suma es: "<< sum << endl;
+
+return 0;
+
+}
