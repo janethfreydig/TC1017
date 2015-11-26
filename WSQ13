@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+float babilonian(int a)
+{
+  int i;
+  float b;
+  float c;
+  float x;
+  float y;
+
+  for(i=1;x<a;i++)
+  {
+    x=i*i;
+    y=i-1;
+  }
+
+  for(i=1;i<10;i++)
+  {
+    b=a/y;
+    c=y+(b-y)/2;
+    b=c;
+  }
+  return c;
+}
+
+
+int main()
+{
+  int a;
+  cout << "Input a number to get the square root using the Babilonian Method: ";
+  cin >> a;
+
+  cout << "The square root is: " << babilonian(a) << endl;
+  return 0;
+}
