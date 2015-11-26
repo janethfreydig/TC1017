@@ -1,0 +1,71 @@
+#include <iostream>
+#include <vector>
+#include <math.h>
+
+using namespace std;
+int main()
+{
+vector<int> list;
+  int a;
+  int b;
+  int c;
+  int d;
+  int e;
+  int f;
+  int g;
+  int h;
+  int i;
+  int j;
+  int k;
+  int l;
+  int m;
+  int average;
+  int stand;
+  int total;
+  cout << "Input 10 integer numbers to calculate the average, the standard deviation and the total."<< endl;
+  cout<< "Input the first number:" << endl;
+  cin >> a;
+  cout<< "Input the second number:" << endl;
+  cin >> b;
+  cout<< "Input the third number:" << endl;
+  cin >> c;
+  cout<< "Input the fourth number:" << endl;
+  cin >> d;
+  cout<< "Input the fifth number:" << endl;
+  cin >> e;
+  cout<< "Input the sixth number:" << endl;
+  cin >> f;
+  cout<< "Input the seventh number:" << endl;
+  cin >> g;
+  cout<< "Input the eighth number:" << endl;
+  cin >> h;
+  cout << "Input the ninth number:" << endl;
+  cin >> j;
+  cout << "Input the tenth:" << endl;
+  cin >> k;
+  list.push_back(a);
+  list.push_back(b);
+  list.push_back(c);
+  list.push_back(d);
+  list.push_back(e);
+  list.push_back(f);
+  list.push_back(g);
+  list.push_back(h);
+  list.push_back(j);
+  list.push_back(k);
+  average = (list[1] + list[2] + list[3] + list[4] + list[5] + list[6] + list[7] + list[8] + list[9] + list[0])/10;
+  total = list[1] + list[2] + list[3] + list[4] + list[5] + list[6] + list[7] + list[8] + list[9] + list[0];
+  l = 0;
+  for (i=0;i<= average;i++)
+  {
+    l = (average - list[i]) * (average - list[i]);
+    m = l + l;
+  }
+  stand =  sqrt(k/average);
+  cout<< "The average is: "<< average << endl;
+  cout << "The standard desviation: " << stand << endl;
+  cout << "The total is: " << total << endl;
+
+  return 0;
+
+}
